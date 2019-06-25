@@ -49,17 +49,6 @@ testLib.init = function() {
     }
     testBoot = true;
 
-    let kafkaAvroLog = KafkaAvro.getLogger();
-
-    kafkaAvroLog.addStream({
-      type: 'stream',
-      stream: fmt({
-        outputMode: 'long',
-        levelInString: true,
-      }),
-      level: 'debug',
-    }, 'debug');
-
     this.timeout(180000); // wait up to 3' for the SR to come up
 
     return Promise.all([
@@ -77,6 +66,7 @@ testLib.init = function() {
     let kafkaAvro = new KafkaAvro({
       kafkaBroker: testLib.KAFKA_BROKER_URL,
       schemaRegistry: testLib.KAFKA_SCHEMA_REGISTRY_URL,
+      log: testLib.log
     });
 
     testLib.log.info('test.beforeEach 2: Invoking kafkaAvro.init()...');
