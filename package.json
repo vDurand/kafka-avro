@@ -1,24 +1,8 @@
 {
-  "name": "kafka-avro",
-  "version": "1.2.0",
+  "name": "kafka-avro-sbs",
+  "version": "1.2.4",
   "main": "./lib/kafka-avro",
   "description": "Node.js bindings for librdkafka with Avro schema serialization.",
-  "homepage": "https://github.com/waldophotos/kafka-avro",
-  "bugs": "https://github.com/waldophotos/kafka-avro/issues",
-  "author": {
-    "name": "Thanasis Polychronakis",
-    "email": "thanpolas@gmail.com"
-  },
-  "contributors": [
-    {
-      "name": "Ricardo Bin",
-      "email": "ricardohbin@gmail.com"
-    }
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/waldophotos/kafka-avro"
-  },
   "license": "MIT",
   "engines": {
     "node": ">=0.12"
