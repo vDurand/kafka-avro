@@ -1,6 +1,6 @@
 {
   "name": "kafka-avro-sbs",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "main": "./lib/kafka-avro",
   "description": "Node.js bindings for librdkafka with Avro schema serialization.",
   "license": "MIT",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "avsc": "^5.2.3",
-    "axios": "^0.15.3",
+    "axios": "^0.19.0",
     "bluebird": "^3.4.6",
     "bunyan": "^1.8.5",
     "bunyan-format": "^0.2.1",
